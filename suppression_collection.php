@@ -9,6 +9,7 @@ $bSupprimer = false;
 $iIdentifiant = filter_var($_GET['id'], FILTER_VALIDATE_INT);
 if (isset($_GET['id']) && false !== $iIdentifiant) :
     /**
+     *
      * Supprime les ouvrages de la collection
      */
     $sRequeteSql = 'DELETE FROM ouvrage WHERE collection_id = ' . $iIdentifiant;
